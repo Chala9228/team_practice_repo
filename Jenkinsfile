@@ -14,7 +14,7 @@ pipeline{
        stage("deploy on tomcat"){
        steps{
           sshagent(['demo-deploy-cred']) {
-          sh 'scp -o StrictHostKeyChecking=no target/Example-0.0.1-SNAPSHOT.war ec2-user@172.31.14.242:/opt/apache-tomcat-9.0.52/webapps/' 
+          sh 'scp -o StrictHostKeyChecking=no target/Example-0.0.1-SNAPSHOT.war ec2-user@172.31.14.242:/opt/apache-tomcat-9.0.52/webapps' 
             }
           }
         }
