@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage("scm checkout"){
       steps{
-            git credentialsId: 'github-cred-id', url: 'https://github.com/DEVOPS2021PTP/java-maven-sample-war.git'
+            git credentialsId: 'github-cred-id', url: 'https://github.com/Chala9228/java-maven-sample-war.git'
            }
           }
      stage("Maven Build"){
